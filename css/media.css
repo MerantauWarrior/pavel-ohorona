@@ -1,13 +1,112 @@
 @media (min-width: 768px) and (max-width: 1024px){
-    
+    /*General*/
+    .course{
+        width: 50%;
+    }
+    /*Header*/
+    .header__logo{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    /*Footer*/
+    .footer__menu-col{
+        margin-left: 80px;
+    }
+    /*Subscribe*/
+    .subscribe__inner{
+        justify-content: space-between;
+        align-items: center;
+    }
+    .subscribe__text, .subscribe__form{
+        max-width: 49%;
+        padding: 0;
+    }
+    .subscribe__form{
+        justify-content: flex-end;
+    }
+    .subscribe__form-inp{
+        max-width: 210px;
+    }
+    /*Home page*/
+    .cta__inner{
+        margin-left: 40px;
+    }
+    .goal__text{
+        max-width: 100%;
+    }
+    .course--half .course__title{
+        max-width: 100%;
+    }
+    .course--half .course__link{
+        margin-bottom: 0;
+    }
+    /*Test page*/
+    .test__result-box{
+        padding: 0 20px;
+    }
 }
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){
-   
+    .course-learn-page__intro-text.text{
+        max-width: 64%;
+    }
+    .course-learn-page__intro-img{
+        max-width: 34%;
+    }
 }
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){
-    
+    /*Navigation*/
+    .navigation{
+        padding: 15px 0;
+    }
+    .navigation__inner{
+        flex-direction: column;
+    }
+    .navigation__menu{
+        margin-bottom: 10px;
+    }
+    .navigation__menu-item{
+        height: 40px;
+        padding: 0 10px;
+    }
+    .navigation__menu-item:not(:first-child):before{
+        bottom: 13px;
+    }
+    /*Footer*/
+    .footer__socials{
+        width: 100%;
+        justify-content: center;
+        margin-top: 40px;
+        margin-right: 0;
+    }
+    /*Course Learn page*/
+    .course-learn-page__intro-img{
+        margin: 0 auto;
+    }
+    .course-learn-page__intro-text.text{
+        max-width: 100%;
+        margin-top: 15px;
+    }
+    /*Test page*/
+    .test-item__answer{
+        max-width: 30%;
+        margin-right: 3%;
+    }
 }
 @media (min-width: 320px) and (max-width: 767px){
+    /*General*/
+    .btn{
+        width: 100%;
+        max-width: 100%;
+    }
+    .title{
+        font-size: 30px;
+    }
+    .course{
+        width: 100%;
+    }
+    .course__title{
+        font-size: 20px;
+    }
     /*Header*/
     .header__innder{
         flex-direction: column;
@@ -34,6 +133,7 @@
         margin-bottom: 20px;
     }
     .navigation__menu-item{
+        width: 100%;
         height: 40px;
         padding: 0 15px;
     }
@@ -78,7 +178,94 @@
         padding: 15px;
     }
     /*Home page*/
-
+    .cta{
+        padding: 40px 0;
+    }
+    .cta__inner{
+        margin-left: 0;
+    }
+    .cta__title{
+        font-size: 30px;
+        line-height: 1.4em;
+    }
+    .goal{
+        padding: 40px 0;
+    }
+    .goal__numbers,
+    .number:nth-child(odd){
+        margin-left: 0;
+    }
+    .number__value{
+        font-size: 60px;
+    }
+    .about{
+        padding: 40px 0;
+    }
+    .list__col{
+        max-width: 100%;
+    }
+    .course--half .course__title{
+        max-width: 100%;
+    }
+    .course-rules-page,
+    .course-detail-page,
+    .courses-category-page,
+    .course-learn-page,
+    .base-page,
+    .test,
+    .results{
+        padding: 20px 0 40px;
+    }
+    /*Courses Category page*/
+    .pagination__item{
+        width: 35px;
+        height: 35px;
+    }
+    /*Courses Rules page*/
+    .course-rules-page__btns{
+        margin-top: 0;
+    }
+    .course-rules-page__btn{
+        margin: 10px 0;
+    }
+    /*Test page*/
+    .test-item__answer{
+        max-width: 100%;
+    }
+    .test__result{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .test__result-title{
+        margin-right: 0;
+    }
+    .test__result-box{
+        margin-top: 15px;
+        margin-right: 0;
+    }
+    /*Results page*/
+    .results-item{
+        padding-bottom: 30px;
+    }
+    .results-item__img{
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    .results-item__img img{
+        width: 100%;
+    }
+    .results-item-result__attempt, .results-item-result__value, .results-item-result__date{
+        margin-bottom: 15px;
+        font-size: 14px;
+    }
+    .results-item-result__value{
+        width: 115px;
+    }
+    .results-item-result__date{
+        margin-right: 0;
+    }
 }
 @media (min-width: 320px) and (max-width: 767px) and (orientation: landscape){
     

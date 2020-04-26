@@ -233,7 +233,6 @@ input[type="radio"]{
 }
 .course__box{
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     height: 100%;
     background-color: #fff;
@@ -251,6 +250,9 @@ input[type="radio"]{
     -webkit-box-shadow:  0 6px 27px rgba(0,147,211,0.41);
     -moz-box-shadow:  0 6px 27px rgba(0,147,211,0.41);
     box-shadow:  0 6px 27px rgba(0,147,211,0.41);
+}
+.course__img img{
+    width: 100%;
 }
 .course__text{
     flex: 1;
@@ -342,6 +344,7 @@ input[type="radio"]{
 }
 .results-item:last-child{
     border-bottom: none;
+    margin-bottom: 0;
 }
 .results-item__img{
     width: 100%;
@@ -659,6 +662,7 @@ input[type="radio"]{
     margin-top: 23px;
 }
 .course-pdf__icon{
+    min-width: 22px;
     margin-right: 10px;
 }
 .course-pdf__link{
@@ -678,6 +682,7 @@ input[type="radio"]{
 }
 .course-rules-page__btns{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     margin-top: 50px;
@@ -756,6 +761,8 @@ input[type="radio"]{
 .cta{
     padding: 50px 0 65px 0;
     background: transparent url(../img/cta-bg.jpg) center center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
 }
 .cta__inner{
     width: 100%;
@@ -781,6 +788,8 @@ input[type="radio"]{
 .goal{
     padding: 50px 0 70px 0;
     background: transparent url(../img/goal-bg.jpg) center center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
 }
 .goal__inner{
     display: flex;
