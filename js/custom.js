@@ -1,15 +1,55 @@
-$(document).keydown(function (event) {
-  if (event.keyCode == 123) { // Prevent F12
-    return false;
-  } else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) { // Prevent Ctrl+Shift+I
-    return false;
-  }
-});
-$(document).on("contextmenu", function (e) {
-  e.preventDefault();
-});
+// $(document).keydown(function (event) {
+//   if (event.keyCode == 123) { // Prevent F12
+//     return false;
+//   } else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) { // Prevent Ctrl+Shift+I
+//     return false;
+//   }
+// });
+// $(document).on("contextmenu", function (e) {
+//   e.preventDefault();
+// });
 
 $( document ).ready(function() {
+
+  $('.js-modal').click(function (e) {
+    e.preventDefault();
+    var modal = $(this).attr('href');
+    $('body').toggleClass('ovh');
+    $('.modal').show();
+    $('.modal-window'+modal).show();
+  });
+  $('.js-modal-close').click(function () {
+    $('body').removeClass('ovh');
+    $('.modal-window').hide();
+    $('.modal').hide();
+  });
+  //Close modal
+  function closeModal(event) {
+    if (event.target === document.querySelectorAll('.modal')[0] || event.which === 27 || event.keyCode === 27) {
+      document.querySelectorAll('.modal')[0].style.display = 'none';
+      document.getElementsByTagName('body')[0].classList.remove('ovh');
+    }
+  }
+  document.addEventListener('click', function (event) {
+    closeModal(event);
+  });
+  document.addEventListener('touchstart', function (event) {
+    closeModal(event);
+  });
+  document.addEventListener("keydown", function (event) {
+    closeModal(event);
+  });
+
+  $('.js-course-request').click(function (e) {
+    e.preventDefault();
+    $(this).hide();
+    $('.course-detail-page-request').show();
+  });
+
+  $('.test-item__radio').click(function () {
+    $(this).closest('.test-item').find('label.test-item__radio').removeClass('test-item__radio_checked');
+    $(this).addClass('test-item__radio_checked');
+  });
 
   /*modal form submit
   $("form").submit(function (event) {
