@@ -8,6 +8,9 @@
         width: 100%;
         margin-bottom: 15px;
     }
+    .navigation__menu-link{
+        font-size: 18px;
+    }
     /*Footer*/
     .footer__menu-col{
         margin-left: 80px;
@@ -139,6 +142,15 @@
     }
     .navigation__menu-item:not(:first-child):before{
         bottom: 13px;
+    }
+    .navigation__menu-item:first-child:before {
+        content: "";
+        position: absolute;
+        bottom: 13px;
+        left: 0;
+        width: 2px;
+        height: 10px;
+        background-color: #0093d3;
     }
     /*sucscribe*/
     .subscribe__inner{
