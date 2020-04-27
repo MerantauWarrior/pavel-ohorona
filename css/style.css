@@ -1231,6 +1231,9 @@ input[type="radio"]{
     font-size: 16px;
     color: #9c9a9a;
 }
+.footer__menu-link:hover{
+    color: #0093d3;
+}
 .footer__menu-link:last-child{
     margin-bottom: 0;
 }
